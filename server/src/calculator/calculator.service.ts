@@ -65,14 +65,12 @@ export class CalculatorService {
   }
 
   async save(data: CreateCalculationDTO) {
-    console.log({ env: process.env.NODE_ENV });
     const address = this.request['ip'];
     const calculation = await this.calculatorModel.create({ ...data, address });
     return calculation;
   }
 
   async getHistory(): Promise<Calculator[]> {
-    console.log({ env: process.env.NODE_ENV });
     const address = this.request['ip'];
     const calculations = await this.calculatorModel.find({
       address,

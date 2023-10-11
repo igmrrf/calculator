@@ -37,7 +37,13 @@ After installing the dependencies create a .env file from sample in .env.sample
 ### Start the NestJS server:
 
 `npm start:dev`
-The server should now be running at http://localhost:PORT.(you set in your .env)
+The server should now be running at http://localhost:PORT.(you had set in your .env)
+
+### API Documentation
+
+A mini-api documentation with Swagger can be found at '/api' of your backend server.
+Given the server was running on port 4030, that would be `http://localhost:4030/api/
+`
 
 ## Frontend Setup (Reactjs)
 
@@ -49,7 +55,7 @@ The server should now be running at http://localhost:PORT.(you set in your .env)
 
 `npm install`
 
-### Start the NestJS server:
+### Start the React application:
 
 `npm start`
 

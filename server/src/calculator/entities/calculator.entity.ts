@@ -3,6 +3,7 @@ import { OPERATIONS } from './calculator.types';
 
 class Calculator {
   _id?: ObjectId;
+
   parameters: string[];
   result: number;
   operation: OPERATIONS;
